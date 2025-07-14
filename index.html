@@ -1,111 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abdul-Rhman Ammourah | Cybersecurity Portfolio</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #0f172a;
-      color: #f1f5f9;
-    }
-    header {
-      background-color: #1e293b;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
-      color: #94a3b8;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .projects {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-    .project {
-      background-color: #1e293b;
-      padding: 1.5rem;
-      border-radius: 0.75rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-    .project h3 {
-      margin-top: 0;
-      color: #38bdf8;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #1e293b;
-      color: #94a3b8;
-    }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    @media (min-width: 600px) {
-      .projects {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul-Rhman Ammourah - Cybersecurity Graduate & Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assest\favicon.png" type="image/png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-
-  <header>
-    <h1>Abdul-Rhman Ammourah</h1>
-    <p>Cybersecurity Graduate | Developer | Blue Team Enthusiast</p>
-  </header>
-
-  <section>
-    <h2>🚀 Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>UMBRA</h3>
-        <p>Linux-based command-line tool that uses OSINT data and AI-powered logic to generate targeted password lists. Ideal for Red Team simulations and cybersecurity awareness.</p>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">AA</span> 
       </div>
-      <div class="project">
-        <h3>TaskSentinel</h3>
-        <p>React Native + Django app for managing and monitoring tasks, with integrated log forwarding to Splunk via HTTP Event Collector for real-time security testing.</p>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-      <div class="project">
-        <h3>WannaChat</h3>
-        <p>End-to-end encrypted chat app built with React Native and C#/.NET backend using WebSockets and MongoDB for real-time secure communication.</p>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="gradient-text">Abdul-Rhman Ammourah</span>
+        </h1>
+        <h2 class="hero-subtitle">Cybersecurity Graduate | Developer | Blue Team Enthusiast</h2>
+        <p class="hero-description">
+          I'm a cybersecurity graduate with strong technical skills in software development,
+          defensive security, and building practical tools. I blend programming, OSINT, and
+          security knowledge to build solutions that solve real-world challenges.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="security-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>🛠 Skills</h2>
-    <p>Python, JavaScript, C#, Bash, React Native, Django, MongoDB, OSINT, Splunk, SOC Monitoring, Forensics</p>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-left">
+          <div class="about-photo">
+            <img src="assest/PersonalPicture.webp" alt="Abdul-Rhman Ammourah" class="profile-pic">
+          </div>
+          <div class="about-text">
+            <p>
+              I'm passionate about Blue Team operations, SOC tools, and developing secure,
+              user-friendly applications. My expertise spans across cybersecurity fundamentals,
+              software development, and practical security implementations.
+            </p>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <h3>Education</h3>
+            <p><strong>Bachelor's Degree in Cybersecurity</strong></p>
+            <p>Jordan University of Science and Technology (JUST)</p>
+            <p>Graduated with Excellent GPA</p>
+            <div class="courses">
+              <span class="course-tag">Ethical Hacking</span>
+              <span class="course-tag">Digital Forensics</span>
+              <span class="course-tag">Network Defense</span>
+              <span class="course-tag">OSINT</span>
+              <span class="course-tag">Malware Analysis</span>
+            </div>
+          </div>
+          <div class="stat-item">
+            <h3>Certifications</h3>
+            <div class="certification">
+              <i class="fas fa-certificate"></i>
+              <span><strong>CompTIA Security+</strong> — Validated foundational security knowledge</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>📫 Contact</h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></p>
-    <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Languages & Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Bash</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">React Native</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-shield-alt"></i> Cybersecurity & Blue Team</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">SOC Monitoring</span>
+            <span class="skill-tag">Splunk (HEC)</span>
+            <span class="skill-tag">Log Analysis</span>
+            <span class="skill-tag">Digital Forensics</span>
+            <span class="skill-tag">Autopsy</span>
+            <span class="skill-tag">FTK Imager</span>
+            <span class="skill-tag">Threat Intelligence</span>
+            <span class="skill-tag">Incident Response</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Other Technologies</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Raspberry Pi</span>
+            <span class="skill-tag">IoT Integration</span>
+            <span class="skill-tag">Linux (Ubuntu)</span>
+            <span class="skill-tag">Windows Server</span>
+            <span class="skill-tag">VirtualBox</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Abdul-Rhman Ammourah. All rights reserved.</p>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <h3><i class="fas fa-lock"></i> UMBRA</h3>
+            <span class="project-type">Graduation Project</span>
+          </div>
+          <p class="project-description">
+            A Linux-based CLI tool that combines OSINT data with AI to generate targeted password lists.
+            It uses personal data, then feeds it into a model (via API) to create efficient password
+            guesses — improving over brute force or dictionaries.
+          </p>
+          <div class="project-features">
+            <span class="feature">Trained GPT-2 model</span>
+            <span class="feature">CLI & GUI interface</span>
+            <span class="feature">Modular design</span>
+            <span class="feature">Open source</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Abdul-Rahman-Ammourah/UMBRA" class="project-link" target="_blank">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3><i class="fas fa-tasks"></i> TaskSentinel</h3>
+            <span class="project-type">Full-Stack App</span>
+          </div>
+          <p class="project-description">
+            A task management and monitoring app built with React Native and Python(Flask) backend.
+            Supports user authentication and logs all operations to Splunk via HTTP Event Collector (HEC),
+            allowing for real-time Blue Team simulations.
+          </p>
+          <div class="project-features">
+            <span class="feature">React Native</span>
+            <span class="feature">Python Flask</span>
+            <span class="feature">Splunk HEC</span>
+            <span class="feature">SOC Monitoring</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Abdul-Rahman-Ammourah/TaskSentinel" class="project-link" target="_blank">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3><i class="fas fa-comments"></i> WannaChat</h3>
+            <span class="project-type">Messaging App</span>
+          </div>
+          <p class="project-description">
+            A secure messaging app using React Native (frontend) and C#/.NET (backend), supporting
+            real-time WebSocket communication and MongoDB storage. Includes login, token-based
+            authentication, and secure message handling.
+          </p>
+          <div class="project-features">
+            <span class="feature">React Native</span>
+            <span class="feature">C#/.NET</span>
+            <span class="feature">WebSocket</span>
+            <span class="feature">MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Abdul-Rahman-Ammourah/-WannaChat-" class="project-link" target="_blank">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:abdulrhamanammourah@gmail.com">abdulrhamanammourah@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/Abdul-Rahman-Ammourah" target="_blank">Abdul-Rahman-Ammourah</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/abdulrhmanammourah/" target="_blank">abdulrhmanammourah</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <span>Jordan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Abdul-Rhman Ammourah. All rights reserved.</p>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
+
 </html>
